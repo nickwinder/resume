@@ -188,6 +188,10 @@ li {
     color: var(--secondary-text-color);
 }
 
+a {
+    display: inline-block;
+}
+
 .header-badge {
     box-sizing: border-box;
     float: left;
@@ -212,6 +216,7 @@ li {
     line-height: 60px;
     border-bottom: 1px solid black;
     max-width: 100%;
+
     background-color: var(--navigation-background);
 }
 
@@ -220,24 +225,30 @@ li {
     line-height: 60px;
     border-bottom: 1px solid black;
     max-width: 100%;
+
     background-color: var(--primary-color);
 }
 
-.navigation-text {
+.navigation-link {
+    text-decoration: none;
     margin-bottom: auto;
     margin-top: auto;
-    margin-right: 24px;
-    float: right;
+    width: 100%;
+}
+
+.navigation-text {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: right;
     font-size: medium;
     font-weight: lighter;
     color: var(--secondary-inverted-text-color);
 }
 
 .navigation-text-highlighted {
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-right: 24px;
-    float: right;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: right;
     font-size: medium;
     font-weight: lighter;
     color: var(--primary-text-color);
@@ -245,9 +256,9 @@ li {
 
 
 .navigation-icon-image {
+    padding-left: 24px;
     width: 20px;
     height: 20px;
-    margin-left: 24px;
     float: left;
     margin-top: 20px;
 }
