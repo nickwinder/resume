@@ -275,6 +275,10 @@ li {
     background: var(--content-background);
 }
 
+.content-link {
+    width: inherit;
+}
+
 .content-image {
     width: inherit;
     margin-top: var(--margin-vertical);
