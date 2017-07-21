@@ -271,6 +271,33 @@ a {
     fill: var(--primary-text-color);
 }
 
+.social {
+    position: relative;
+    height: 80px;
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.social-links a {
+    position: relative;
+    display: inline-block;
+}
+
+.social-links a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .main-content {
     box-sizing: border-box;
     float: left;
