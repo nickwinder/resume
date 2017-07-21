@@ -97,9 +97,9 @@ textarea {
    Custom vars
    ========================================================================== */
 :root {
-    --primary-color: #4fc3f7;
-    --primary-dark-color: #0093c4;
-    --primary-light-color: #8bf6ff;
+    --primary-color: #6fb7ff;
+    --primary-dark-color: #3387cc;
+    --primary-light-color: #a5e9ff;
 
     --background: #eaeaea;
     --content-background: #ffffff;
@@ -215,6 +215,14 @@ li {
     background-color: var(--navigation-background);
 }
 
+.navigation-item-highlighted {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    background-color: var(--primary-color);
+}
+
 .navigation-text {
     margin-bottom: auto;
     margin-top: auto;
@@ -224,6 +232,17 @@ li {
     font-weight: lighter;
     color: var(--secondary-inverted-text-color);
 }
+
+.navigation-text-highlighted {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 24px;
+    float: right;
+    font-size: medium;
+    font-weight: lighter;
+    color: var(--primary-text-color);
+}
+
 
 .navigation-icon-image {
     width: 20px;
@@ -237,6 +256,10 @@ li {
     fill: var(--disabled-inverted-text-color);
 }
 
+.navigation-icon-svg-highlighted {
+    fill: var(--primary-text-color);
+}
+
 .main-content {
     box-sizing: border-box;
     float: left;
@@ -245,7 +268,15 @@ li {
 }
 
 .content-card {
+    width: inherit;
     padding: 8px 24px;
+    margin-top: var(--margin-vertical);
+    margin-bottom: var(--margin-vertical);
+    background: var(--content-background);
+}
+
+.content-image {
+    width: inherit;
     margin-top: var(--margin-vertical);
     margin-bottom: var(--margin-vertical);
     background: var(--content-background);
@@ -307,8 +338,8 @@ li {
 }
 
 .timeline-item h5 {
-    -webkit-margin-after: 0em;
-    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
 }
 
 .timeline-item::before {
@@ -340,15 +371,15 @@ li {
 }
 
 .education-year {
-    -webkit-margin-after: 0em;
+    -webkit-margin-after: 0;
 }
 
 .education-location {
-    -webkit-margin-before: 0em;
+    -webkit-margin-before: 0;
 }
 
 .education-year-subtext {
-    -webkit-margin-before: 0em;
+    -webkit-margin-before: 0;
 }
 
 .education-year-2 {
@@ -363,8 +394,8 @@ li {
     float: right;
     font-style: italic;
     font-size: smaller;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 
 /* ==========================================================================
