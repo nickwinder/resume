@@ -357,6 +357,8 @@ a {
 }
 
 .feature-row {
+    display: flex;
+    justify-content: space-between;
     width: auto;
     height: auto;
 }
