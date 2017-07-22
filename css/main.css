@@ -215,15 +215,16 @@ a {
     height: 60px;
     line-height: 60px;
     max-width: 100%;
+    transition: 0.5s ease;
 
-    background-color: var(--navigation-background);
+    background: var(--navigation-background);
+}
+
+.navigation-item:hover {
+    background: var(--primary-dark-color);
 }
 
 .navigation-item-highlighted {
-    height: 60px;
-    line-height: 60px;
-    max-width: 100%;
-
     background-color: var(--primary-color);
 }
 
@@ -240,15 +241,11 @@ a {
     text-align: right;
     font-size: medium;
     font-weight: lighter;
+    transition: 0.5s ease;
     color: var(--secondary-inverted-text-color);
 }
 
-.navigation-text-highlighted {
-    padding-left: 24px;
-    padding-right: 24px;
-    text-align: right;
-    font-size: medium;
-    font-weight: lighter;
+.navigation-item:hover .navigation-text {
     color: var(--primary-text-color);
 }
 
@@ -261,11 +258,17 @@ a {
 }
 
 .navigation-icon-svg {
+    transition: fill .5s ease;
     fill: var(--disabled-inverted-text-color);
 }
 
-.navigation-icon-svg-highlighted {
+.navigation-item:hover .navigation-icon-svg {
     fill: var(--primary-text-color);
+}
+
+.navigation-highlighted {
+    fill: var(--primary-text-color);
+    color: var(--primary-text-color);
 }
 
 .social {

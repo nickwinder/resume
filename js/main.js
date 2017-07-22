@@ -1,17 +1,18 @@
 for (var i = 0; i < document.links.length; i++) {
     var link = document.links[i];
     if (window.location.pathname.indexOf(link.getAttribute('href')) > -1) {
-        link.parentNode.className = "navigation-item-highlighted";
-        var pathToSvg = document.links[i].firstElementChild.getAttribute("data");
-        pathToSvg = pathToSvg.substring(0, pathToSvg.length - 4);
-        pathToSvg = pathToSvg + "-highlighted.svg";
-        link.firstElementChild.setAttribute("data", pathToSvg);
+        link.parentNode.classList.add('navigation-item-highlighted');
 
-        for (var j = 0; j < link.childNodes.length; j++) {
-            var child = link.childNodes[j];
-            if (child.nodeType === 1 && (link.childNodes[j].getAttribute("class").indexOf("navigation-text") > -1)) {
-                link.childNodes[j].className = "navigation-text-highlighted";
-            }
+        highlightElements(link);
+    }
+}
+
+function highlightElements(element) {
+    for (var j = 0; j < element.childNodes.length; j++) {
+        var child = element.childNodes[j];
+        if (child.nodeType === 1) {
+            child.classList.add('navigation-highlighted');
+            highlightElements(child);
         }
     }
 }
