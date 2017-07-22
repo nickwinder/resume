@@ -132,13 +132,13 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-text-color);
-    -webkit-margin-after: 1em;
-    -webkit-margin-before: 0.83em;
+    margin-bottom: 1em;
+    margin-top: 0.83em;
 }
 
 h2 {
-    -webkit-margin-after: 0.1em;
-    -webkit-margin-before: 0.1em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
     font-size: xx-large;
     font-weight: 900;
     text-transform: uppercase;
@@ -155,16 +155,16 @@ h3 {
 h4 {
     font-size: small;
     text-transform: uppercase;
-    -webkit-margin-after: 0.8em;
-    -webkit-margin-before: 0.8em;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
 }
 
 h5 {
     font-weight: 500;
     font-size: small;
     color: var(--primary-text-color);
-    -webkit-margin-after: 1em;
-    -webkit-margin-before: 0.83em;
+    margin-bottom: 1em;
+    margin-top: 0.83em;
 }
 
 h6 {
@@ -172,8 +172,8 @@ h6 {
     font-size: small;
     font-style: italic;
     color: var(--primary-text-color);
-    -webkit-margin-after: 1em;
-    -webkit-margin-before: 2em;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 p {
@@ -298,7 +298,7 @@ a {
 }
 
 .social-links h5 {
-    -webkit-margin-after: 0;
+    margin-bottom: 0;
 }
 
 .social-link {
@@ -340,8 +340,8 @@ a {
 }
 
 .job-title {
-    -webkit-margin-after: 0.2em;
-    -webkit-margin-before: 0.2em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
 }
 
 .card-main {
@@ -397,8 +397,8 @@ a {
 }
 
 .timeline-item h5 {
-    -webkit-margin-after: 0;
-    -webkit-margin-before: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .timeline-item::before {
@@ -430,15 +430,15 @@ a {
 }
 
 .education-year {
-    -webkit-margin-after: 0;
+    margin-bottom: 0;
 }
 
 .education-location {
-    -webkit-margin-before: 0;
+    margin-top: 0;
 }
 
 .education-year-subtext {
-    -webkit-margin-before: 0;
+    margin-top: 0;
 }
 
 .education-year-2 {
@@ -453,8 +453,8 @@ a {
     float: right;
     font-style: italic;
     font-size: smaller;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
