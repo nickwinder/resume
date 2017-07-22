@@ -1,13 +1,14 @@
-<?xml version="1.0" ?>
-<svg height="32px" version="1.1" viewBox="0 0 60 60" width="32px" xmlns="http://www.w3.org/2000/svg"
->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../css/main.css" type="text/css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="32px" version="1.1" viewBox="0 0 60 60" width="32px" xmlns="http://www.w3.org/2000/svg">
     <title/>
     <desc/>
     <defs/>
     <g fill="none" fill-rule="evenodd" id="soical" stroke="none" stroke-width="1">
         <g id="social" transform="translate(-773.000000, -138.000000)">
             <g id="slices" transform="translate(173.000000, 138.000000)"/>
-            <g fill="#000000" id="square-black" transform="translate(173.000000, 138.000000)">
+            <g class="social-icon-svg" id="square-black" transform="translate(173.000000, 138.000000)">
                 <path
                     d="M602.995937,0 L657.004063,0 C658.658673,0 660,1.33730974 660,2.99593743 L660,57.0040626 C660,58.6586731 658.66269,60 657.004063,60 L602.995937,60 C601.341327,60 600,58.6626903 600,57.0040626 L600,2.99593743 C600,1.34132688 601.33731,0 602.995937,0 Z"
                     id="square-7"/>

@@ -305,6 +305,14 @@ a {
     text-decoration: none;
 }
 
+.social-icon-svg {
+    fill: var(--navigation-background);
+}
+
+.social-icon-svg-highlighted {
+    fill: var(--primary-color);
+}
+
 .main-content {
     box-sizing: border-box;
     float: left;
