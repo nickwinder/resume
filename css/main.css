@@ -214,7 +214,6 @@ a {
 .navigation-item {
     height: 60px;
     line-height: 60px;
-    border-bottom: 1px solid black;
     max-width: 100%;
 
     background-color: var(--navigation-background);
@@ -223,7 +222,6 @@ a {
 .navigation-item-highlighted {
     height: 60px;
     line-height: 60px;
-    border-bottom: 1px solid black;
     max-width: 100%;
 
     background-color: var(--primary-color);
@@ -273,7 +271,8 @@ a {
 
 .social {
     position: relative;
-    height: 80px;
+    height: 100px;
+    background: var(--content-background);
 }
 
 .social-links {
@@ -296,6 +295,14 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.social-links h5 {
+    -webkit-margin-after: 0;
+}
+
+.social-link {
+    text-decoration: none;
 }
 
 .main-content {
