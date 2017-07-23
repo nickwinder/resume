@@ -212,41 +212,19 @@ a {
 }
 
 .navigation-item {
+    display: block;
     height: 60px;
     line-height: 60px;
+    padding-right: 24px;
     max-width: 100%;
     transition: 0.5s ease;
 
-    background: var(--navigation-background);
-}
-
-.navigation-item:hover {
-    background: var(--primary-dark-color);
-}
-
-.navigation-item-highlighted {
-    background-color: var(--primary-color);
-}
-
-.navigation-link {
-    text-decoration: none;
-    margin-bottom: auto;
-    margin-top: auto;
-    width: 100%;
-}
-
-.navigation-text {
-    padding-left: 24px;
-    padding-right: 24px;
     text-align: right;
     font-size: medium;
     font-weight: lighter;
-    transition: 0.5s ease;
     color: var(--secondary-inverted-text-color);
-}
 
-.navigation-item:hover .navigation-text {
-    color: var(--primary-text-color);
+    background: var(--navigation-background);
 }
 
 .navigation-icon-image {
@@ -262,13 +240,8 @@ a {
     fill: var(--disabled-inverted-text-color);
 }
 
-.navigation-item:hover .navigation-icon-svg {
-    fill: var(--primary-text-color);
-}
-
-.navigation-highlighted {
-    fill: var(--primary-text-color);
-    color: var(--primary-text-color);
+.portfolio-input {
+    display: none;
 }
 
 .social {
@@ -311,15 +284,24 @@ a {
     fill: var(--navigation-background);
 }
 
-.social-icon-svg-highlighted {
-    fill: var(--primary-color);
-}
-
 .main-content {
     box-sizing: border-box;
     float: left;
     width: 742px;
     height: auto;
+}
+
+.dynamic-content {
+    width: inherit;
+    position: relative;
+}
+
+.content {
+    width: inherit;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
 }
 
 .content-card {
@@ -379,6 +361,8 @@ a {
     margin: 0 auto;
     width: 1200px;
     height: auto;
+    opacity: 0;
+    transition: 0.5s ease;
 }
 
 .feature-row {
@@ -480,6 +464,50 @@ a {
     font-size: smaller;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Handle Clicks
+   ========================================================================== */
+
+/*------------------ Click on Resume ------------------ */
+
+#resume-button:hover + label {
+    background: var(--primary-dark-color);
+    color: var(--primary-text-color);
+}
+
+#resume-button:hover + label #resume-icon {
+    fill: var(--primary-text-color);
+}
+
+#resume-button:checked + label {
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+#resume-button:checked + label #resume-icon {
+    fill: var(--primary-text-color);
+}
+
+/*-------------------- Click on Portfolio ----------------*/
+
+#portfolio-button:hover + label {
+    background: var(--primary-dark-color);
+    color: var(--primary-text-color);
+}
+
+#portfolio-button:hover + label #portfolio-icon {
+    fill: var(--primary-text-color);
+}
+
+#portfolio-button:checked + label {
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+#portfolio-button:checked + label #portfolio-icon {
+    fill: var(--primary-text-color);
 }
 
 /* ==========================================================================
