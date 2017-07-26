@@ -245,7 +245,7 @@ a {
 
 .holder {
     margin: 0 auto;
-    width: 1200px;
+    width: 1025px;
     opacity: 0;
     transition: 0.5s ease;
 }
@@ -513,14 +513,25 @@ a {
 /* ==========================================================================
   Responsive design
   =========================================================================== */
-@media only screen and (max-width: 1000px) {
 
+@media only screen and (max-width: 1025px) {
+  .holder {
+      width: 961px;
+  }
+
+  .education-year-3 {
+      float: none;
+      display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 961px) {
     .holder {
-        width: 800px;
+        width: 600px;
     }
 
     [class*="col-"] {
-        width: 800px;
+        width: 600px;
     }
 
     .header-badge {
@@ -532,21 +543,7 @@ a {
         float: none;
         margin: 0 auto;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    .holder {
-        width: 600px;
-    }
-
-    [class*="col-"] {
-        width: 600px;
-    }
-
-    .education-year-3 {
-        float: none;
-        display: inline-block;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -693,10 +690,6 @@ a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
