@@ -254,7 +254,8 @@ a {
     float: left;
     height: inherit;
     margin-right: var(--margin-horizontal);
-    margin-top: var(--margin-vertical)
+    margin-top: var(--margin-vertical);
+    margin-bottom: 16px;
 }
 
 .header-badge img {
@@ -365,6 +366,13 @@ a {
     background: var(--content-background);
 }
 
+.name-card {
+    width: 100%;
+    padding: 8px 24px;
+    margin-top: var(--margin-vertical);
+    background: var(--content-background);
+}
+
 .content-link {
     width: inherit;
     position: relative;
@@ -400,11 +408,6 @@ a {
 .job-title {
     margin-bottom: 0.2em;
     margin-top: 0.2em;
-}
-
-.card-main {
-    margin-left: var(--margin-horizontal);
-    margin-right: var(--margin-horizontal);
 }
 
 .feature-row {
@@ -536,7 +539,8 @@ a {
 
     .header-badge {
         float: none;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-content {
@@ -561,7 +565,7 @@ a {
     }
 
     .feature-item {
-        width: 100%;
+        width: inherit;
     }
 }
 
