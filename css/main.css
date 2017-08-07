@@ -246,8 +246,6 @@ a {
 .holder {
     margin: 0 auto;
     width: 1025px;
-    opacity: 0;
-    transition: 0.5s ease;
 }
 
 .header-badge {
@@ -356,6 +354,7 @@ a {
 .content {
     width: 100%;
     position: absolute;
+    display: none;
     visibility: hidden;
     overflow: hidden;
     opacity: 0;
