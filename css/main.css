@@ -337,7 +337,11 @@ a {
 }
 
 .social-icon-svg {
-    fill: var(--navigation-background);
+    fill: var(--navigation-background)
+}
+
+.social-icon-svg-innner {
+    fill: var(--primary-inverted-text-color)
 }
 
 .main-content {
@@ -613,6 +617,16 @@ a {
 
 #portfolio-button:checked + label #portfolio-icon {
     fill: var(--primary-text-color);
+}
+
+/*----------------------- Social Link ----------------------*/
+
+#github-link:hover #github-icon-svg {
+    fill: var(--primary-dark-color);
+}
+
+#linkedin-link:hover #linkedin-icon-svg {
+    fill: var(--primary-dark-color);
 }
 
 /* ==========================================================================
