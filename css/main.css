@@ -335,11 +335,12 @@ a {
 }
 
 .social-icon-svg {
-    fill: var(--navigation-background)
+    fill: var(--navigation-background);
+    transition: 0.5s ease;
 }
 
 .social-icon-svg-innner {
-    fill: var(--primary-inverted-text-color)
+    fill: var(--primary-inverted-text-color);
 }
 
 .main-content {
