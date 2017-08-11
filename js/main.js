@@ -3,9 +3,9 @@ window.onload = function () {
     var portfolioContent = document.getElementById("portfolio-content");
     var resumeButton = document.getElementById("resume-button");
     var portfolioButton = document.getElementById("portfolio-button");
-    var master = document.getElementById('master');
+    var body = document.body;
 
-    showContent(master);
+    showContent(body);
     showContent(resumeContent);
 
     resumeButton.onclick = function () {
