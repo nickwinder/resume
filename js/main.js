@@ -3,10 +3,9 @@ window.onload = function () {
     var portfolioContent = document.getElementById("portfolio-content");
     var resumeButton = document.getElementById("resume-button");
     var portfolioButton = document.getElementById("portfolio-button");
+    var master = document.getElementById('master');
 
-    enableDisplay(resumeContent);
-    enableDisplay(portfolioContent);
-
+    showContent(master);
     showContent(resumeContent);
 
     resumeButton.onclick = function () {
@@ -29,10 +28,6 @@ window.onload = function () {
         }
     };
 };
-
-function enableDisplay(content) {
-    content.style.display = 'block';
-}
 
 function showContent(content) {
     content.style.visibility = 'visible';
