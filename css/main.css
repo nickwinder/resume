@@ -536,7 +536,7 @@ body {
 }
 
 @media only screen and (max-width: 961px) {
-    .holder {
+    body {
         width: 600px;
     }
 
@@ -559,7 +559,7 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-    .holder {
+    body {
         width: 100%;
     }
 
