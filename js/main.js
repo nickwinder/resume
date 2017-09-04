@@ -3,10 +3,12 @@ window.onload = function () {
     var portfolioContent = document.getElementById("portfolio-content");
     var resumeButton = document.getElementById("resume-button");
     var portfolioButton = document.getElementById("portfolio-button");
-    var body = document.body;
+    var body = document.getElementById("main");
+    var loader = document.getElementById("loader");
 
     showContent(body);
     showContent(resumeContent);
+    hideContent(loader);
 
     resumeButton.onclick = function () {
         if (resumeButton.checked) {
