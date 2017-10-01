@@ -179,21 +179,21 @@ body {
 }
 
 h1 {
-    font-size: medium;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 1em;
-    margin-top: 0.83em;
-}
-
-h2 {
     margin-bottom: 0.1em;
     margin-top: 0.1em;
     font-size: xx-large;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--primary-text-color);
+}
+
+h2 {
+  font-size: medium;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 1em;
+  margin-top: 0.83em;
 }
 
 h3 {
@@ -231,6 +231,11 @@ p {
     font-weight: 400;
     font-size: 14px;
     color: var(--secondary-text-color);
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 0.8em;
 }
 
 li {
@@ -521,6 +526,15 @@ body {
     font-size: smaller;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.caption {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.figure {
+  text-align:center;
 }
 
 #loader {

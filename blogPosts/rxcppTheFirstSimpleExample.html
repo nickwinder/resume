@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nicholas Winder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="loader"></div>
+  <div id="main" style="visibility:hidden">
+    <div class="col-3 header-badge">
+        <img src="../img/profilePictureWithBackground.png">
+        <input id="resume-button" class="portfolio-input" name="navigation-buttons" type="radio" checked>
+        <label id="resume-holder" class="navigation-item" for="resume-button">
+            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24">
+                <path id="resume-icon" class="navigation-icon-svg"
+                      d="M2 3H22C23.1 3 24 4 24 5V19C24 20.1 23.1 21 22 21H2C1 21 0 20.1 0 19V5C0 4 1 3 2 3M14 6V7H22V6H14M14 8V9H21.5L22 9V8H14M14 10V11H21V10H14M8 13.9C6 13.9 2 15 2 17V18H14V17C14 15 10 13.9 8 13.9M8 6A3 3 0 0 0 5 9 3 3 0 0 0 8 12 3 3 0 0 0 11 9 3 3 0 0 0 8 6Z"></path>
+            </svg>
+            RESUME
+        </label>
+
+        <input class="portfolio-input" name="navigation-buttons" type="radio" id="portfolio-button"/>
+        <label id="portfolio-holder" class="navigation-item" for="portfolio-button">
+            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24">
+                <path id="portfolio-icon" class="navigation-icon-svg"
+                      d="M13 9H18.5L13 3.5V9M6 2H14L20 8V20A2 2 0 0 1 18 22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2M6 20H15L18 20V12L14 16 12 14 6 20M8 9A2 2 0 0 0 6 11 2 2 0 0 0 8 13 2 2 0 0 0 10 11 2 2 0 0 0 8 9Z"></path>
+            </svg>
+            PORTFOLIO
+        </label>
+
+        <div class="social">
+            <div class="social-links">
+                <div>
+                    <a id="github-link" href="https://github.com/nfxdevelopment">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">
+                            <g id="github-icon-svg" class="social-icon-svg">
+                                <path
+                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>
+                            </g>
+                            <g class="social-icon-svg-innner">
+                                <path
+                                    d="M25.4 47.5C25.4 47.1 25.4 45.9 25.4 44.3 20.3 45.4 19.2 41.8 19.2 41.8 18.3 39.6 17.1 39 17.1 39 15.5 37.8 17.3 37.8 17.3 37.8 19.1 38 20.1 39.8 20.1 39.8 21.7 42.7 24.4 41.8 25.5 41.4 25.6 40.1 26.1 39.3 26.6 38.8 22.5 38.4 18.2 36.7 18.2 29.5 18.2 27.4 18.9 25.7 20.1 24.4 19.9 23.9 19.3 22 20.3 19.4 20.3 19.4 21.9 18.9 25.4 21.3 26.9 20.9 28.4 20.7 30 20.7 31.6 20.7 33.1 20.9 34.6 21.3 38.1 18.9 39.7 19.4 39.7 19.4 40.7 22 40.1 23.9 39.9 24.4 41.1 25.7 41.8 27.4 41.8 29.5 41.8 36.7 37.5 38.3 33.3 38.8 34 39.4 34.6 40.6 34.6 42.3 34.6 44.9 34.6 46.9 34.6 47.5 34.6 48 34.9 48.6 35.8 48.4 43.2 45.9 48.5 38.8 48.5 30.5 48.5 20 40.2 11.5 30 11.5 19.8 11.5 11.5 20 11.5 30.5 11.5 38.8 16.8 45.9 24.2 48.4 25.1 48.6 25.4 48 25.4 47.5Z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a id="linkedin-link" href="https://www.linkedin.com/in/nicholas-winder-57a6a292/">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">
+                            <g id="linkedin-icon-svg" class="social-icon-svg">
+                                <path
+                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>
+                            </g>
+                            <g class="social-icon-svg-innner">
+                                <path
+                                    d="M21.9 43.8L21.9 25.5 16.2 25.5 16.2 43.8 21.9 43.8ZM21.9 19C21.8 17.4 20.8 16.2 19 16.2 17.2 16.2 16.1 17.4 16.1 19 16.1 20.6 17.2 21.9 18.9 21.9L19 21.9C20.8 21.9 21.9 20.6 21.9 19ZM31.1 43.8L31.1 33.4C31.1 32.8 31.2 32.3 31.3 31.9 31.8 30.8 32.8 29.6 34.5 29.6 36.7 29.6 38.2 30.9 38.2 33.4L38.2 43.8 43.8 43.8 43.8 33.1C43.8 27.4 40.8 24.7 36.7 24.7 33.4 24.7 31.9 26.6 31.1 27.9L31.1 25.4 25.4 25.4C25.5 27.2 25.4 43.8 25.4 43.8L31.1 43.8Z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <a class="social-link" href="mailto:nicholastwinder@gmail.com?Subject=Personal%20Website%20-%20"
+                   target="_top">
+                    <h5>nicholastwinder@gmail.com</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 main-content">
+      <div class="dynamic-content blog">
+            <div id="blog-content" class="content">
+<div class="content-card"><h1 id="rxcpp---the-first-simple-example">RxCpp -&gt; The first simple example</h1></div><div class="content-card"><p>I've been away from C++ for a while now, but it's always important to come back to your roots. All that being said, there is always lots to learn from using different programming languages, libraries and environments. I've been working in the Android world for sometime, keeping up with the latest trends and libraries supported on the platform.</p>
+<p>When you start a new project there is always those libraries you add without even thinking and now RxJava/RxKotlin was an interesting addition to this scenario. Rx stands for reactive, and this is suppose to introduce the concept of reactive programming. I like to think of this as anything to do with taking in some input and throwing the output elsewhere. This is essentially what most programs consist of, whether it be listening on the network, taking inputs from an user or periodically completing a task.</p>
+<p>I want to leave any more explanation of Rx to other blog posts and tutorials as there are many out there due to the support across many languages. I'd rather focus a little more on the usage in C++ by the accompanying library RxCpp which can be found here on <a href="https://github.com/Reactive-Extensions/RxCpp">github</a>.</p>
+</div><div class="content-card"><h2 id="project-setup">Project setup</h2>
+<p>I'll be setting this project up using cmake as I believe this is the quickest way to get started. So first you'll need a empty folder and within this, a folder called modules. The empty folder will hold a CMakeLists.txt and a main.cpp file so go ahead and create them. You should have the following layout.</p>
+<div class="figure">
+<img src="insert%20url" alt="folder layout" />
+<p class="caption">folder layout</p>
+</div>
+<p>Now we need to populate the CMakeList.txt to pull in the RxCpp resources and compile main.cpp. I'm not going to go into this file as this is not a tutorial for cmake.</p>
+<pre><code>cmake_minimum_required(VERSION 3.5)
+project(rxcpp_test)
+
+if(NOT DEFINED RXCPP_SOURCE_DIR)
+    message(FATAL_ERROR &quot;Please define RXCPP_SOURCE_DIR on the command line. -DRXCPP_SOURCE_DIR=pathToRxCppSource&quot; )
+endif()
+
+list(APPEND CMAKE_MODULE_PATH &quot;${CMAKE_CURRENT_SOURCE_DIR}/modules&quot;)
+
+find_package(RxCpp REQUIRED)
+message(STATUS &quot;RXCPP_INCLUDE_DIR: &quot; ${RXCPP_INCLUDE_DIR} )
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES main.cpp)
+
+include_directories(${RXCPP_INCLUDE_DIRS})
+add_executable(main ${SOURCE_FILES})</code></pre>
+<p>Inside the modules folder we now need to create a file called FindRxCpp.cmake. This will allow us to find the header files for the RxCpp library we want to include. Here is what the contents will look like.</p>
+<pre><code># Finds the C++ (RXCPP) Library
+#
+#  RXCPP_INCLUDE_DIRS   - Directory to include to get RXCPP headers
+
+SET(_RXCPP_REQUIRED_VARS  RXCPP_INCLUDE_DIR RXCPP_INCLUDE_DIRS )
+
+#
+### FIRST STEP: Find the headers.
+#
+FIND_PATH(
+        RXCPP_INCLUDE_DIR rxcpp/rx.hpp
+        PATH &quot;${RXCPP_SOURCE_DIR}&quot;
+        DOC &quot;rxcpp include directory&quot;)
+MARK_AS_ADVANCED(RXCPP_INCLUDE_DIR)
+
+SET(RXCPP_INCLUDE_DIRS
+        ${RXCPP_INCLUDE_DIR}/Rx/CPP/src
+        ${RXCPP_INCLUDE_DIR}/Ix/CPP/src
+        ${RXCPP_INCLUDE_DIR})</code></pre>
+<p>Now to write the main.cpp. This is going to be really simple so lets go through it.</p>
+<pre><code>#include &lt;iostream&gt;
+
+#include &quot;rxcpp/rx.hpp&quot;
+
+int main() {
+    auto observable = rxcpp::observable&lt;&gt;::create&lt;const int&gt;(
+            [](rxcpp::subscriber&lt;const int&gt; subscriber){
+                subscriber.on_next(1);
+                subscriber.on_next(2);
+                subscriber.on_next(3);
+                subscriber.on_completed();
+            });
+
+    observable.subscribe(
+            [](const int receivedData){ std::cout &lt;&lt; &quot;Received integer : &quot; &lt;&lt; receivedData &lt;&lt; std::endl;},
+            [](){ std::cout &lt;&lt; &quot;OnCompleted&quot; &lt;&lt; std::endl; }
+    );
+}</code></pre>
+<p>One of the first things that will hit you will be the heavy use of lambdas. Lambdas are really useful when working with Rx as we are firing small segments of code from many different places and &quot;reacting&quot; to different situations.</p>
+<p>On the first line you'll see the observable being created with a template parameter of const int. This is telling the Observable we are going to be firing ints to the observer. A lambda is passed to the create method which fires the on_next events along with any on_error and on_complete which may occur. This is where you can create your own custom streams of data.</p>
+<p>After that you will see the subscriber (observer) which holds two lambdas. The first of which is the code sequence to run when on_next is called and the second is the same for on_complete. I have omitted the on_error in this example as we explicitly know that it will not be fired, but it is always good practice to handle.</p>
+</div><div class="content-card"><h2 id="clone-rxcpp-library">Clone RxCpp library</h2>
+<p>In any location you wish pull down the RxCpp library from github for later use.</p>
+<pre><code>git clone --recursive https://github.com/Reactive-Extensions/RxCpp.git
+cd RxCpp</code></pre>
+</div><div class="content-card"><h2 id="compile">Compile</h2>
+<p>First we need to run cmake.</p>
+<pre><code>mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Debug -DRXCPP_SOURCE_DIR=pathToRxCppRepo ..</code></pre>
+<p>RXCPP_SOURCE_DIR is the folder in which you cloned the rxcpp into.</p>
+</div><div class="content-card"><h2 id="run">Run</h2>
+<p>Now, with the build directory you can run main and you should see the following.</p>
+<pre><code>./main 
+Received integer : 1
+Received integer : 2
+Received integer : 3
+OnCompleted</code></pre>
+</div><div class="content-card"><h2 id="summary">Summary</h2>
+<p>And that's it. There's not too much to discuss yet as we have pretty much just got the project setup. You can see how an observable is subscribed to and the data flows to the given code to execute. Pretty simple, it doesn't show much yet but the semantics. So next is the exploration of whats possible.</p>
+</div>
+            </div>
+      </div>
+    </div>
+</div>
+
+<script src="../js/blog.js"></script>
+
+<!-- Google Analytics -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-104171564-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
