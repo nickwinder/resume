@@ -78,13 +78,14 @@
     <div class="col-9 main-content">
       <div class="dynamic-content blog">
             <div id="blog-content" class="content">
-<div class="content-card"><h1 id="rxcpp---the-first-simple-example">RxCpp -&gt; The first simple example</h1></div><div class="content-card"><p>I've been away from C++ for a while now, but it's always important to come back to your roots. All that being said, there is always lots to learn from using different programming languages, libraries and environments. I've been working in the Android world for sometime, keeping up with the latest trends and libraries supported on the platform.</p>
+<div class="content-card"><h1 id="rxcpp---the-first-simple-example">RxCpp -&gt; The first simple example</h1></div><div class="content-card"><h2 id="intro">Intro</h2>
+<p>I've been away from C++ for a while now, but it's always important to come back to your roots. All that being said, there is always lots to learn from using different programming languages, libraries and environments. I've been working in the Android world for sometime, keeping up with the latest trends and libraries supported on the platform.</p>
 <p>When you start a new project there is always those libraries you add without even thinking and now RxJava/RxKotlin was an interesting addition to this scenario. Rx stands for reactive, and this is suppose to introduce the concept of reactive programming. I like to think of this as anything to do with taking in some input and throwing the output elsewhere. This is essentially what most programs consist of, whether it be listening on the network, taking inputs from an user or periodically completing a task.</p>
 <p>I want to leave any more explanation of Rx to other blog posts and tutorials as there are many out there due to the support across many languages. I'd rather focus a little more on the usage in C++ by the accompanying library RxCpp which can be found here on <a href="https://github.com/Reactive-Extensions/RxCpp">github</a>.</p>
 </div><div class="content-card"><h2 id="project-setup">Project setup</h2>
 <p>I'll be setting this project up using cmake as I believe this is the quickest way to get started. So first you'll need a empty folder and within this, a folder called modules. The empty folder will hold a CMakeLists.txt and a main.cpp file so go ahead and create them. You should have the following layout.</p>
 <div class="figure">
-<img src="insert%20url" alt="folder layout" />
+<img src="../img/rxcppFolderLayout.png" alt="folder layout" />
 <p class="caption">folder layout</p>
 </div>
 <p>Now we need to populate the CMakeList.txt to pull in the RxCpp resources and compile main.cpp. I'm not going to go into this file as this is not a tutorial for cmake.</p>
@@ -160,7 +161,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DRXCPP_SOURCE_DIR=pathToRxCppRepo ..</code></pre
 <p>RXCPP_SOURCE_DIR is the folder in which you cloned the rxcpp into.</p>
 </div><div class="content-card"><h2 id="run">Run</h2>
 <p>Now, with the build directory you can run main and you should see the following.</p>
-<pre><code>./main 
+<pre><code>./main
 Received integer : 1
 Received integer : 2
 Received integer : 3
