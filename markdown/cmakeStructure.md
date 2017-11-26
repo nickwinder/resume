@@ -1,4 +1,4 @@
-# CMake, regain a bit of structure in your life
+# CMake - Regain a bit of structure in your life
 
 ## Intro
 CMake is used in many places when building cross platform C++ projects. For me now, it is the defacto "goto" language to describe my build system. This isn't to say it doesn't have lots of pitfalls, especially when lots of information that is outdated and not agreed upon in the community. But I believe there are better ways to achieve cleaner cmake files. 
