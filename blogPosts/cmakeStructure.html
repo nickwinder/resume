@@ -79,12 +79,12 @@
       <div class="dynamic-content blog">
             <div id="blog-content" class="content">
 <div class="content-card"><h1 id="cmake---regain-a-bit-of-structure-in-your-life">CMake - Regain a bit of structure in your life</h1></div><div class="content-card"><h2 id="intro">Intro</h2>
-<p>CMake is used in many places when building cross platform C++ projects. For me now, it is the defacto &quot;goto&quot; language to describe my build system. This isn't to say it doesn't have lots of pitfalls, especially when lots of information that is outdated and not agreed upon in the community. But I believe there are better ways to achieve cleaner cmake files.</p>
-<p>Normally I would say, your first port of call is the man pages/README/project tutorial hosted on the web. CMake is an exception to this rule as a lot of information found in the <a href="https://cmake.org/cmake-tutorial/">CMake tutorial</a> is outdated, this isn't to say that it will not work, but much like &quot;modern c++&quot;, there is a concept &quot;modern CMake&quot; which will help you in the long run. When searching for information for a solution I often throw the word &quot;modern&quot; in the search term, and also limiting search results from the past few years. (If you are looking for a intro to CMake please watch this <a href="https://www.youtube.com/watch?v=JsjI5xr1jxM">video</a>.)</p>
+<p>CMake is used in many places when building cross platform C++ projects. For me now, it is the defacto &quot;goto&quot; language to describe my build system. This isn't to say it doesn't have pitfalls, especially when information online is outdated and not agreed upon in the community. But I believe there are better ways to achieve cleaner cmake files.</p>
+<p>Normally I would say, your first port of call is the man pages/README/project tutorial hosted on the web. CMake is an exception to this rule as a lot of information found in the <a href="https://cmake.org/cmake-tutorial/">CMake tutorial</a> is outdated. It will still work in most instances, but much like &quot;modern c++&quot;, there is a concept of &quot;modern CMake&quot;, which will help you in the long run. When searching for information for a solution, I often append the word &quot;modern&quot; to search term, while also limiting the search results to the past few years. (If you are looking for a intro to CMake please watch this <a href="https://www.youtube.com/watch?v=JsjI5xr1jxM">video</a>.)</p>
 </div><div class="content-card"><h2 id="structure">Structure</h2>
-<p>One very important factor to any project is structure. Obviously there are many arguments around project structure (where do includes go? single folder for all source?), but lets not get into these ones. CMake also benefits from having some structure to the CMake files. This is because many methods will allow sub-cmake files to inherit from their definitions, which can cause lots of unknown and unwanted behaviour if unaware of this.</p>
+<p>One very important factor to any project is structure. Obviously there are many arguments around project structure (where do includes go? single folder for all source?), but lets not get into these ones. CMake also benefits from having some structure to the CMake files. This is because many methods will allow sub-cmake files to inherit from their definitions, which can cause a lot of unknown and unwanted behaviour if unaware of this.</p>
 <h4 id="structure-done-right">Structure done right</h4>
-<p>One great example of this is the addition of definition to compiler flags. Let's use the following example.</p>
+<p>One great example of this is the addition of definitions to compiler flags. Let's use the following example.</p>
 <pre><code>...
     add_definitions(-DPRINT_SECURE_INFOMATION)
     add_executable(my_test_app source.cpp)
@@ -92,9 +92,9 @@
     add_subdirectory(my_lib)
     target_link_libraries(my_test_app my_lib)
 ...</code></pre>
-<p>So here, we can see that we want to define <code>PRINT_SECURE_INFOMATION</code> for <code>my_test_app</code> , say this would print to key information in your test app that should never be released into the public. We also add a sub-directory that we can expect to compile <code>my_lib</code>, we then link against this in <code>my_test_app</code>. A lot of people would not expect <code>PRINT_SECURE_INFOMATION</code> to be defined in the compilation of <code>my_lib</code>, but this is not true. As <code>add_subdirectory</code> is called after <code>add_definitions(-DPRINT_SECURE_INFOMATION)</code> it will be inherited by any compilation defined in <code>my_lib</code> directory. This could have huge consequences for a release version of <code>my_lib</code> of which you possible could only imagine, but the key here is how to get round this. There are actually two ways of mitigating this issue and the first is the structure.</p>
+<p>Here we can see that <code>PRINT_SECURE_INFOMATION</code> is defined for <code>my_test_app</code> , this may print some key information in your test app that should never be released to the public. We also add a sub-directory that we can expect to compile <code>my_lib</code>, we then link against this in <code>my_test_app</code>. A lot of people would not expect <code>PRINT_SECURE_INFOMATION</code> to be defined in the compilation of <code>my_lib</code>, but this is not true. As <code>add_subdirectory</code> is called after <code>add_definitions(-DPRINT_SECURE_INFOMATION)</code> it will be inherited by any compilation defined in <code>my_lib</code> directory. This could have huge consequences for a release version of <code>my_lib</code>, causing issues you could only imagine. But the key here is how to get round this. There are actually two ways of mitigating this issue and the first is the structure.</p>
 <p>If we employed a better structure, we would never had this issue. The ideal folder structure is as below</p>
-<h6 id="folder-structure">Folder structure</h6>
+<h5 id="folder-structure">Folder structure</h5>
 <pre><code>source/
     CMakeLists.txt
     my_test_app/
@@ -105,12 +105,12 @@
         CMakelists.txt
         source.cpp
         source.hpp</code></pre>
-<h6 id="sourcecmakelists.txt">source/CMakelists.txt</h6>
+<h5 id="sourcecmakelists.txt">source/CMakelists.txt</h5>
 <pre><code>...
     add_subdirectory(my_test_app)
     add_subdirectory(my_lib)
 ...</code></pre>
-<h6 id="sourcemy_test_appcmakelists.txt">source/my_test_app/CMakelists.txt</h6>
+<h5 id="sourcemy_test_appcmakelists.txt">source/my_test_app/CMakelists.txt</h5>
 <pre><code>...
     add_definitions(-DPRINT_SECURE_INFOMATION)
     add_executable(my_test_app source.cpp)
@@ -120,17 +120,17 @@
 <p>Now we can see that the definition can be placed in the cmake file only handling the compilation of <code>my_test_app</code>. This is great as we do not get leaking definitions.</p>
 <p>This is not only true for definitions, it's true of <code>include_directories</code>, which can also cause <a href="https://stackoverflow.com/questions/19981534/cmake-include-directories">hard to diagnose issues</a>, and also in lots of other places, but there are other ways to get round this.</p>
 <h4 id="target-who">Target who?</h4>
-<p>Some of us do not have the luxury of defining our folder structure. If we are retro fitting CMake to an existing project or maybe the team are insistent on a different structure for a valid reason we still have to work with it. This is where the <code>target*</code> methods come in.</p>
-<p>From 2.8.12, in addition to <code>target_link_libraries</code> the concept of more <code>target*</code> methods came about, and this is where the true <strong>modern</strong> CMake started. This is a way of specifying which target you want the given operation to be applied to. Therefore we can always ensure that the operations will not be leaked to other directories or targets. Here's a list of the methods.</p>
+<p>Some of us do not have the luxury of defining our folder structure. If we are retro fitting CMake to an existing project, or maybe the team is insistent on using a difference structure (for a valid reason), we have another option. <code>target*</code>methods.</p>
+<p>In addition to <code>target_link_libraries</code>, the concept of more <code>target*</code> methods came about in CMake 2.8.12, and this is when the true <strong>modern</strong> CMake started. This is a way of specifying which target you want the given operation to be applied to. Therefore we can always ensure that the operations will not be leaked to other directories or targets. Here's a list of the methods.</p>
 <pre><code>target_compile_options
 target_compile_definitions
 target_include_directories
 target_sources  </code></pre>
 <p>We can probably guess what most of these do, but just look them up in the <a href="https://cmake.org/cmake/help/v3.10/index.html">documentation</a> if you are unsure.</p>
-<p>Not that it's a good idea, but theoretically you can have all your libraries and executable additions in one CMake file and we will not get any leakage. Great for when you can not guarantee structure. This also helps with portability, when needing to move folders with accompanying CMake files.</p>
+<p>Not that it's a good idea, but theoretically you can have all your libraries and executable additions in one CMake file and there will be no leakage issues. THis is great for when you can not guarantee structure. This also helps with portability when needing to move folders with accompanying CMake files.</p>
 </div><div class="content-card"><h2 id="structure-round-up">Structure Round Up</h2>
-<p>Applying the fixes explained above are both important to help other users read and maintain CMake in your project. Where as the structure of the project and CMake files have become less important in recent years due to <code>target*</code> usage, it allows the user to follow the flow of the project and build up a mental model to work from.</p>
-<p>You should immediately start using <code>target*</code> methods in your project from now on. The benefits are not just to be found in structuring, but also scoping, which I will discuss in a further blog. There is no reason to see <code>include_directories</code> any more, whereas you could have some arguments for using <code>add_definitions</code> for wide casting architecture needs.</p>
+<p>Applying the fixes explained above are both important ways to help other users read and maintain CMake in your project. Although the structure of the project and CMake files have become less important in recent years due to <code>target*</code> usage, it does allow the user to follow the flow of the project and build up a mental model to work from.</p>
+<p>I recommend you immediately start using <code>target*</code> methods in current and future projects. The benefits are not only found in structuring, but also scoping, which will be discussed in future post. There is no reason to see <code>include_directories</code> any more, however you could have some arguments for using <code>add_definitions</code> for wide casting architecture needs.</p>
 </div>
             </div>
       </div>
