@@ -626,6 +626,10 @@ body {
     .feature-item {
         width: inherit;
     }
+
+    .divein-item {
+        width: 135px;
+    }
 }
 
 
