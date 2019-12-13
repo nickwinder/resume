@@ -182,14 +182,14 @@ body {
 h1 {
     margin-bottom: 0.1em;
     margin-top: 0.1em;
-    font-size: xx-large;
+    font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
 h2 {
-  font-size: medium;
+  font-size: x-large;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -199,13 +199,13 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: large;
+    font-size: x-large;
     text-transform: uppercase;
     color: var(--secondary-text-color);
 }
 
 h4 {
-    font-size: small;
+    font-size: medium;
     text-transform: uppercase;
     margin-bottom: 0.8em;
     margin-top: 0.8em;
@@ -213,7 +213,7 @@ h4 {
 
 h5 {
     font-weight: 500;
-    font-size: small;
+    font-size: medium;
     color: var(--primary-text-color);
     margin-bottom: 1em;
     margin-top: 0.83em;
@@ -221,7 +221,7 @@ h5 {
 
 h6 {
     font-weight: 400;
-    font-size: small;
+    font-size: medium;
     font-style: italic;
     color: var(--primary-text-color);
     margin-bottom: 1em;
@@ -230,7 +230,7 @@ h6 {
 
 p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--secondary-text-color);
 }
 
@@ -244,7 +244,7 @@ pre {
 
 li {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--secondary-text-color);
 }
 
@@ -358,9 +358,9 @@ body {
     fill: var(--primary-inverted-text-color);
 }
 
-.main-content {
-    float: left;
-}
+/*.main-content {*/
+/*    float: left;*/
+/*}*/
 
 .dynamic-content {
     width: 100%;
@@ -438,14 +438,14 @@ body {
 
 .feature-item {
     float: left;
-    width: 250px;
+    width: 300px;
     height: auto;
     margin: var(--margin-vertical);
 }
 
 .feature-image {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -483,11 +483,11 @@ body {
 .timeline-item::before {
     content: attr(date-is);
     position: absolute;
-    left: 2em;
-    top: 0.7em;
+    left: 1.5em;
+    top: 0.2em;
     display: block;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .timeline-item::after {
@@ -506,6 +506,10 @@ body {
     -o-border-image: linear-gradient(to bottom, var(--divder-color) 60%, transparent) 1 100%;
     border-image: -webkit-linear-gradient(top, var(--divder-color) 60%, transparent) 1 100%;
     border-image: linear-gradient(to bottom, var(--divder-color) 60%, transparent) 1 100%;
+}
+
+.experience-body {
+    margin-bottom: 50px;
 }
 
 .education-year {

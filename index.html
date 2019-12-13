@@ -18,71 +18,73 @@
 <body>
 <div id="loader"></div>
 <div id="main" style="visibility:hidden">
-    <div class="col-3 header-badge">
-        <img src="img/profilePictureWithBackground.png">
-        <input id="resume-button" class="portfolio-input" name="navigation-buttons" type="radio" checked>
-        <label id="resume-holder" class="navigation-item" for="resume-button">
-            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                 viewBox="0 0 24 24">
-                <path id="resume-icon" class="navigation-icon-svg"
-                      d="M2 3H22C23.1 3 24 4 24 5V19C24 20.1 23.1 21 22 21H2C1 21 0 20.1 0 19V5C0 4 1 3 2 3M14 6V7H22V6H14M14 8V9H21.5L22 9V8H14M14 10V11H21V10H14M8 13.9C6 13.9 2 15 2 17V18H14V17C14 15 10 13.9 8 13.9M8 6A3 3 0 0 0 5 9 3 3 0 0 0 8 12 3 3 0 0 0 11 9 3 3 0 0 0 8 6Z"></path>
-            </svg>
-            RESUME
-        </label>
+    <!--    <div class="col-3 header-badge">-->
+    <!--        <img src="img/profilePictureWithBackground.png">-->
+    <!--        <input id="resume-button" class="portfolio-input" name="navigation-buttons" type="radio" checked>-->
+    <!--        <label id="resume-holder" class="navigation-item" for="resume-button">-->
+    <!--            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"-->
+    <!--                 viewBox="0 0 24 24">-->
+    <!--                <path id="resume-icon" class="navigation-icon-svg"-->
+    <!--                      d="M2 3H22C23.1 3 24 4 24 5V19C24 20.1 23.1 21 22 21H2C1 21 0 20.1 0 19V5C0 4 1 3 2 3M14 6V7H22V6H14M14 8V9H21.5L22 9V8H14M14 10V11H21V10H14M8 13.9C6 13.9 2 15 2 17V18H14V17C14 15 10 13.9 8 13.9M8 6A3 3 0 0 0 5 9 3 3 0 0 0 8 12 3 3 0 0 0 11 9 3 3 0 0 0 8 6Z"></path>-->
+    <!--            </svg>-->
+    <!--            RESUME-->
+    <!--        </label>-->
 
-        <input class="portfolio-input" name="navigation-buttons" type="radio" id="portfolio-button"/>
-        <label id="portfolio-holder" class="navigation-item" for="portfolio-button">
-            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                 viewBox="0 0 24 24">
-                <path id="portfolio-icon" class="navigation-icon-svg"
-                      d="M13 9H18.5L13 3.5V9M6 2H14L20 8V20A2 2 0 0 1 18 22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2M6 20H15L18 20V12L14 16 12 14 6 20M8 9A2 2 0 0 0 6 11 2 2 0 0 0 8 13 2 2 0 0 0 10 11 2 2 0 0 0 8 9Z"></path>
-            </svg>
-            PORTFOLIO
-        </label>
+    <!--        <input class="portfolio-input" name="navigation-buttons" type="radio" id="portfolio-button"/>-->
+    <!--        <label id="portfolio-holder" class="navigation-item" for="portfolio-button">-->
+    <!--            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"-->
+    <!--                 viewBox="0 0 24 24">-->
+    <!--                <path id="portfolio-icon" class="navigation-icon-svg"-->
+    <!--                      d="M13 9H18.5L13 3.5V9M6 2H14L20 8V20A2 2 0 0 1 18 22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2M6 20H15L18 20V12L14 16 12 14 6 20M8 9A2 2 0 0 0 6 11 2 2 0 0 0 8 13 2 2 0 0 0 10 11 2 2 0 0 0 8 9Z"></path>-->
+    <!--            </svg>-->
+    <!--            PORTFOLIO-->
+    <!--        </label>-->
 
-        <div class="social">
-            <div class="social-links">
-                <div>
-                    <a id="github-link" href="https://github.com/nfxdevelopment">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">
-                            <g id="github-icon-svg" class="social-icon-svg">
-                                <path
-                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>
-                            </g>
-                            <g class="social-icon-svg-innner">
-                                <path
-                                    d="M25.4 47.5C25.4 47.1 25.4 45.9 25.4 44.3 20.3 45.4 19.2 41.8 19.2 41.8 18.3 39.6 17.1 39 17.1 39 15.5 37.8 17.3 37.8 17.3 37.8 19.1 38 20.1 39.8 20.1 39.8 21.7 42.7 24.4 41.8 25.5 41.4 25.6 40.1 26.1 39.3 26.6 38.8 22.5 38.4 18.2 36.7 18.2 29.5 18.2 27.4 18.9 25.7 20.1 24.4 19.9 23.9 19.3 22 20.3 19.4 20.3 19.4 21.9 18.9 25.4 21.3 26.9 20.9 28.4 20.7 30 20.7 31.6 20.7 33.1 20.9 34.6 21.3 38.1 18.9 39.7 19.4 39.7 19.4 40.7 22 40.1 23.9 39.9 24.4 41.1 25.7 41.8 27.4 41.8 29.5 41.8 36.7 37.5 38.3 33.3 38.8 34 39.4 34.6 40.6 34.6 42.3 34.6 44.9 34.6 46.9 34.6 47.5 34.6 48 34.9 48.6 35.8 48.4 43.2 45.9 48.5 38.8 48.5 30.5 48.5 20 40.2 11.5 30 11.5 19.8 11.5 11.5 20 11.5 30.5 11.5 38.8 16.8 45.9 24.2 48.4 25.1 48.6 25.4 48 25.4 47.5Z"></path>
-                            </g>
-                        </svg>
-                    </a>
-                    <a id="linkedin-link" href="https://www.linkedin.com/in/nicholas-winder-57a6a292/">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">
-                            <g id="linkedin-icon-svg" class="social-icon-svg">
-                                <path
-                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>
-                            </g>
-                            <g class="social-icon-svg-innner">
-                                <path
-                                    d="M21.9 43.8L21.9 25.5 16.2 25.5 16.2 43.8 21.9 43.8ZM21.9 19C21.8 17.4 20.8 16.2 19 16.2 17.2 16.2 16.1 17.4 16.1 19 16.1 20.6 17.2 21.9 18.9 21.9L19 21.9C20.8 21.9 21.9 20.6 21.9 19ZM31.1 43.8L31.1 33.4C31.1 32.8 31.2 32.3 31.3 31.9 31.8 30.8 32.8 29.6 34.5 29.6 36.7 29.6 38.2 30.9 38.2 33.4L38.2 43.8 43.8 43.8 43.8 33.1C43.8 27.4 40.8 24.7 36.7 24.7 33.4 24.7 31.9 26.6 31.1 27.9L31.1 25.4 25.4 25.4C25.5 27.2 25.4 43.8 25.4 43.8L31.1 43.8Z"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <a class="social-link" href="mailto:nicholastwinder@gmail.com?Subject=Personal%20Website%20-%20"
-                   target="_top">
-                    <h5>nicholastwinder@gmail.com</h5>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="col-9 main-content">
+    <!--        <div class="social">-->
+    <!--            <div class="social-links">-->
+    <!--                <div>-->
+    <!--                    <a id="github-link" href="https://github.com/nfxdevelopment">-->
+    <!--                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">-->
+    <!--                            <g id="github-icon-svg" class="social-icon-svg">-->
+    <!--                                <path-->
+    <!--                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>-->
+    <!--                            </g>-->
+    <!--                            <g class="social-icon-svg-innner">-->
+    <!--                                <path-->
+    <!--                                    d="M25.4 47.5C25.4 47.1 25.4 45.9 25.4 44.3 20.3 45.4 19.2 41.8 19.2 41.8 18.3 39.6 17.1 39 17.1 39 15.5 37.8 17.3 37.8 17.3 37.8 19.1 38 20.1 39.8 20.1 39.8 21.7 42.7 24.4 41.8 25.5 41.4 25.6 40.1 26.1 39.3 26.6 38.8 22.5 38.4 18.2 36.7 18.2 29.5 18.2 27.4 18.9 25.7 20.1 24.4 19.9 23.9 19.3 22 20.3 19.4 20.3 19.4 21.9 18.9 25.4 21.3 26.9 20.9 28.4 20.7 30 20.7 31.6 20.7 33.1 20.9 34.6 21.3 38.1 18.9 39.7 19.4 39.7 19.4 40.7 22 40.1 23.9 39.9 24.4 41.1 25.7 41.8 27.4 41.8 29.5 41.8 36.7 37.5 38.3 33.3 38.8 34 39.4 34.6 40.6 34.6 42.3 34.6 44.9 34.6 46.9 34.6 47.5 34.6 48 34.9 48.6 35.8 48.4 43.2 45.9 48.5 38.8 48.5 30.5 48.5 20 40.2 11.5 30 11.5 19.8 11.5 11.5 20 11.5 30.5 11.5 38.8 16.8 45.9 24.2 48.4 25.1 48.6 25.4 48 25.4 47.5Z"></path>-->
+    <!--                            </g>-->
+    <!--                        </svg>-->
+    <!--                    </a>-->
+    <!--                    <a id="linkedin-link" href="https://www.linkedin.com/in/nicholas-winder-57a6a292/">-->
+    <!--                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 60 60" width="32">-->
+    <!--                            <g id="linkedin-icon-svg" class="social-icon-svg">-->
+    <!--                                <path-->
+    <!--                                    d="M3 0L57 0C58.7 0 60 1.3 60 3L60 57C60 58.7 58.7 60 57 60L3 60C1.3 60 0 58.7 0 57L0 3C0 1.3 1.3 0 3 0Z"></path>-->
+    <!--                            </g>-->
+    <!--                            <g class="social-icon-svg-innner">-->
+    <!--                                <path-->
+    <!--                                    d="M21.9 43.8L21.9 25.5 16.2 25.5 16.2 43.8 21.9 43.8ZM21.9 19C21.8 17.4 20.8 16.2 19 16.2 17.2 16.2 16.1 17.4 16.1 19 16.1 20.6 17.2 21.9 18.9 21.9L19 21.9C20.8 21.9 21.9 20.6 21.9 19ZM31.1 43.8L31.1 33.4C31.1 32.8 31.2 32.3 31.3 31.9 31.8 30.8 32.8 29.6 34.5 29.6 36.7 29.6 38.2 30.9 38.2 33.4L38.2 43.8 43.8 43.8 43.8 33.1C43.8 27.4 40.8 24.7 36.7 24.7 33.4 24.7 31.9 26.6 31.1 27.9L31.1 25.4 25.4 25.4C25.5 27.2 25.4 43.8 25.4 43.8L31.1 43.8Z"></path>-->
+    <!--                            </g>-->
+    <!--                        </svg>-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--                <a class="social-link" href="mailto:nicholastwinder@gmail.com?Subject=Personal%20Website%20-%20"-->
+    <!--                   target="_top">-->
+    <!--                    <h5>nicholastwinder@gmail.com</h5>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="col-12 main-content">
         <div class="name-card">
             <h1 class="name">NICHOLAS WINDER</h1>
             <h3 class="job-title">Embedded Engineer and Software Developer</h3>
-        </div>
-
+        </div>9
         <div class="dynamic-content">
             <div id="resume-content" class="content">
+
+                <hr>
+
                 <div class="content-card">
                     <h2>Personal Summary</h2>
                     <div class="card-main">
@@ -99,7 +101,8 @@
                                 <object class="feature-image" type="image/svg+xml" data="img/c.svg">Feature Image
                                 </object>
                                 <h4 class="feature-title">C and C++</h4>
-                                <p>Designed and developed multi-threaded C and C++ Linux applications for embedded
+                                <p>Designed and developed multi-threaded C and <strong>C++</strong> Linux applications
+                                    for embedded
                                     products with complex networked systems.</p>
                             </div>
 
@@ -108,8 +111,9 @@
                                     Image
                                 </object>
                                 <h4 class="feature-title">Android</h4>
-                                <p>Developed and released 4 android applications to the play store, written in Java and
-                                    Kotlin.</p>
+                                <p>Developed and released 4 android applications to the play store, written in <strong>Java</strong>
+                                    and
+                                    <strong>Kotlin</strong>.</p>
                             </div>
                         </div>
 
@@ -120,7 +124,8 @@
                                 <object class="feature-image" type="image/svg+xml" data="img/linux.svg">Feature Image
                                 </object>
                                 <h4 class="feature-title">Linux Solutions</h4>
-                                <p>Competent with the Linux kernel and creating kernel modules. Using Docker to create
+                                <p>Competent with the <strong>Linux Kernel</strong> and creating kernel modules. Using
+                                    <strong>Docker</strong> to create
                                     reproducible build environments.</p>
                             </div>
 
@@ -128,8 +133,9 @@
                                 <object class="feature-image" type="image/svg+xml" data="img/compiler.svg">Feature Image
                                 </object>
                                 <h4 class="feature-title">Developer Environments</h4>
-                                <p>Experience in rolling linux based environments and toolchains for ARM and powerquicc
-                                    microprocessors using Buildroot and LTIB. </p>
+                                <p>Experience in rolling linux based environments and toolchains for
+                                    <strong>ARM</strong> and powerquicc
+                                    microprocessors using <strong>Buildroot</strong> and LTIB. </p>
                             </div>
 
                             <div class="feature-item">
@@ -137,7 +143,7 @@
                                 </object>
                                 <h4 class="feature-title">Developer Tools</h4>
                                 <p>Extensive use of bug tracking, buildservers, and version control/peer review software
-                                    from Atlassian, Github, Jenkins and Buildkite.</p>
+                                    from <strong>Atlassian</strong>, Github, Jenkins and Buildkite.</p>
                             </div>
                         </div>
 
@@ -152,6 +158,9 @@
                         </ul> -->
                     </div>
                 </div>
+
+                <hr>
+
                 <div class="content-card">
                     <div class="card-main">
                         <div class="feature-row">
@@ -180,202 +189,224 @@
                     </div>
                     <br style="clear: both">
                 </div>
+
+                <hr>
+
                 <div class="content-card">
                     <h2>Experience</h2>
 
                     <div class="card-main">
-                        <div class="timeline-item" date-is='2017-Present'>
-                            <h5>PSPDFKit, Vienna Austria (Remote)</h5>
-                            <h3 class="company">Software Developer</h3>
-                            <p>Developing PDF SDKs across multiple platforms</p>
+                        <h4 class="education-year">2017-Present</h4>
+                        <h5 class="education-location">PSPDFKit, Vienna Austria (Remote)</h5>
+                        <h3 class="company">Software Developer</h3>
+                        <div class="experience-body">
 
-                            <ul>
-                                <li>Working with extensively tested C++17 to fix and maintain core product.</li>
-                                <li>Developing new features in a C++ core with an API exposed to iOS, Android, UWP,
-                                    Web Assembly and Linux.
-                                </li>
-                                <li>Created and released a new Server SDK for Java and .NET in 4 months.</li>
-                                <li>Helped develop the UWP windows SDK from an early stage in C# and C++/CLI.</li>
-                                <li>Refactoring and modernizing the core build CMake build system.</li>
-                                <li>Writing technical and non-technical blogs, guides, and API documentation.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" date-is='2011-2015'>
-                            <h5>Music Group Research, Manchester UK</h5>
-                            <h3 class="company">Embedded Engineer/Software Developer</h3>
-                            <p>Creating products for the professional audio industry.</p>
+                        <p>Developing PDF SDKs across multiple platforms</p>
 
-                            <ul>
-                                <li>Introduced a new buildroot environment used in 4 products.</li>
-                                <li>Developed std11 compatible C++ libraries used across multiple architectures.</li>
-                                <li>Debugged multi threaded applications on remote targets (gdb).</li>
-                                <li>Managed a team of 3 to develop a releasable product.</li>
-                                <li>Advised and debugged initial PCB design for 4 different products. Seeing the boards
-                                    from embedded bring up to bootable version of Linux.
-                                </li>
-                                <li>Bug fix and maintenance work with current product range.</li>
-                                <li>As part of a team of 2, released a ecos based product within the first 6 months of
-                                    working at the company.
-                                </li>
+                        <ul>
+                            <li>Working with extensively tested C++17 to fix and maintain core product.</li>
+                            <li>Developing new features in a C++ core with an API exposed to iOS, Android, UWP,
+                                Web Assembly and Linux.
+                            </li>
+                            <li>Created and released a new Server SDK for Java and .NET in 4 months.</li>
+                            <li>Helped develop the UWP windows SDK from an early stage in C# and C++/CLI.</li>
+                            <li>Refactoring and modernizing the core build CMake build system.</li>
+                            <li>Writing technical and non-technical blogs, guides, and API documentation.</li>
+                        </ul>
 
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item" date-is='2009-Present'>
-                            <h5>NFX Development</h5>
-                            <h3 class="company">Android Software Developer</h3>
-                            <p>NFX development is a personal project which brings audio/engineering applications to the
-                                world of phones and tablets.</p>
-                            <ul>
-                                <li>30,000 current users over 4 applications and over 150,000 installs in total.</li>
-                                <li>2 applications with an average rating of 4.17 out of 5 on the google play store.
-                                </li>
-                                <li>Experience with the Android SDK, Java and android development tools.</li>
-                                <li>Android USB implementation to interface with an external pcb</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item" date-is='2008-2009'>
-                            <h5>Peak Communications, Brighouse UK</h5>
-                            <h3 class="company">Software Engineer</h3>
-                            <p>Satellite frequency converters</p>
-
-                            <ul>
-                                <li>Team of 2 developing bespoke customer designs based on a 8051 architecture.</li>
-                                <li>Developed a microprocessor module to control a redundant switch over system. All
-                                    schematic
-                                    creation, PCB layout and programming done only by myself within 6 months
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item" date-is='2017'>
-                            <h5>HPE, Remote Contract</h5>
-                            <h3 class="company">Android Software Developer</h3>
-                            <p>Industrial Leak Detection</p>
-
-                            <ul>
-                                <li>Signal analysis of USB ultrasound microphone data performed in app</li>
-                                <li>Locally stored database synced with a server via a REST API</li>
-                                <li>Implementation of user input forms for database editing</li>
-                                <li>Full creative flexibility to implement extensive use of Material Design</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item" date-is='2016'>
-                            <h5>Winder RnD, Remote Contract</h5>
-                            <h3 class="company">Android Software Developer</h3>
-                            <p>Pregnancy Due Date Application</p>
-
-                            <ul>
-                                <li>Helped develop and publish a 4 page android application</li>
-                                <li>Developed in accordance to a functional spec with creative flexibility</li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
+                    <h4 class="education-year">2011-2015</h4>
+                    <h5 class="education-location">Music Group Research, Manchester UK</h5>
 
-                <div class="content-card">
+                        <h3 class="company">Embedded Engineer/Software Developer</h3>
+                    <div class="experience-body">
 
-                    <h2>Education</h2>
+                    <p>Creating products for the professional audio industry.</p>
 
-                    <div class="card-main">
+                        <ul>
+                            <li>Introduced a new buildroot environment used in 4 products.</li>
+                            <li>Developed std11 compatible C++ libraries used across multiple architectures.</li>
+                            <li>Debugged multi threaded applications on remote targets (gdb).</li>
+                            <li>Managed a team of 3 to develop a releasable product.</li>
+                            <li>Advised and debugged initial PCB design for 4 different products. Seeing the boards
+                                from embedded bring up to bootable version of Linux.
+                            </li>
+                            <li>Bug fix and maintenance work with current product range.</li>
+                            <li>As part of a team of 2, released a ecos based product within the first 6 months of
+                                working at the company.
+                            </li>
 
-                        <h2 class="education-year">2006-2010</h2>
-                        <h5 class="education-location">University of Huddersfield, UK</h5>
-                        <h3>First-Class Honours Bachelor’s Degree in Electronics</h3>
+                        </ul>
+                    </div>
 
-                        <div class="card-main">
-                            <div class="education-year-2">
-                                <h6 class="education-year-subtext">2nd Year Modules</h6>
+                    <h4 class="education-year">2009-Present</h4>
+                    <h5 class="education-location">NFX Development</h5>
 
-                                <p>Enterprise 1 - 78% (A) <br>
-                                    Electronics 2 - 76% (A) <br>
-                                    Signal Analysis and Control - 62% (B) <br>
-                                    Embedded Systems - 85% (A) <br>
-                                    Communications - 71% (B)</p>
-                            </div>
+                        <h3 class="company">Android Software Developer</h3>
+                    <div class="experience-body">
 
-                            <div class="education-year-3">
-                                <h6 class="education-year-subtext">3rd Year Modules</h6>
+                    <p>NFX development is a personal project which brings audio/engineering applications to the
+                            world of phones and tablets.</p>
+                        <ul>
+                            <li>30,000 current users over 4 applications and over 150,000 installs in total.</li>
+                            <li>2 applications with an average rating of 4.17 out of 5 on the google play store.
+                            </li>
+                            <li>Experience with the Android SDK, Java and android development tools.</li>
+                            <li>Android USB implementation to interface with an external pcb</li>
+                        </ul>
+                    </div>
 
-                                <p>Individual Project (DSP Audio Acoustics) 85% (A) <br>
-                                    DSP Applications - 77% (A) <br>
-                                    Analogue Systems Integration - 79% (A) <br>
-                                    Digital Systems Integration - 78% (A) <br>
-                                    Communication Systems - 77% (A)</p>
-                            </div>
-                        </div>
+                    <h4 class="education-year">2008-2009</h4>
+                    <h5 class="education-location">Peak Communications, Brighouse UK</h5>
 
-                        <div style="clear: both;">
-                            <p class="subtext">* Percentages are in reference to the UK scoring system</p>
-                        </div>
-                        <div style="clear: both;">
-                            <a class="subtext"
-                               href="http://www.fulbright.org.uk/going-to-the-usa/pre-departure/academics">Click
-                                here for conversion chart</a>
-                        </div>
+                        <h3 class="company">Embedded Software Engineer</h3>
+                    <div class="experience-body">
 
-                        <br style="clear: both;">
+                    <p>Satellite frequency converters</p>
 
-                        <!--                        <h3>Hull College</h3>
+                        <ul>
+                            <li>Team of 2 developing bespoke customer designs based on a 8051 architecture.</li>
+                            <li>Developed a microprocessor module to control a redundant switch over system. All
+                                schematic
+                                creation, PCB layout and programming done only by myself within 6 months
+                            </li>
+                        </ul>
+                    </div>
 
-                                                <div class="card-main">
+                    <!--                        <h4 class="education-year">2017</h4>-->
+                    <!--                            <h5 class="education-location">HPE, Remote Contract</h5>-->
+                    <!--                                <div class"experience-body">
+                    -->
+                    <!--                            <h3 class="company">Android Software Developer</h3>-->
+                    <!--                            <p>Industrial Leak Detection</p>-->
 
-                                                    <h4>BTec Music Technology — 2003-2006</h4>
+                    <!--                            <ul>-->
+                    <!--                                <li>Signal analysis of USB ultrasound microphone data performed in app</li>-->
+                    <!--                                <li>Locally stored database synced with a server via a REST API</li>-->
+                    <!--                                <li>Implementation of user input forms for database editing</li>-->
+                    <!--                                <li>Full creative flexibility to implement extensive use of Material Design</li>-->
+                    <!--                            </ul>-->
+                    <!--                        </div>-->
 
-                                                    <p>Achieved: Distinction - Distinction - Merit</p>
-                                                </div>-->
+                    <h4 class="education-year">2016</h4>
+                    <h5 class="education-location">Winder RnD, Remote Contract</h5>
+
+                        <h3 class="company">Android Software Developer</h3>
+                    <div class="experience-body">
+
+                    <p>Pregnancy Due Date Application</p>
+
+                        <ul>
+                            <li>Helped develop and publish a 4 page android application</li>
+                            <li>Developed in accordance to a functional spec with creative flexibility</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="portfolio-content" class="content">
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.specscope">
-                        <img class="content-image" src="img/promoGraphicSpecscope.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>NFX Development Specscope v2</h3>
-                </div>
 
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.winderrnd.personalizedduedate">
-                        <img class="content-image" src="img/promoGraphicPDD.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>Winder RnD Personalized Due Date</h3>
-                </div>
+            <hr>
 
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.heartfit">
-                        <img class="content-image" src="img/promoGraphicHeartFit.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>NFX Development Heart Fit</h3>
-                </div>
+            <div class="content-card">
 
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.oscilloscope.microphone">
-                        <img class="content-image" src="img/promoGraphicOscilloscope.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
+                <h2>Education</h2>
+
+                <div class="card-main">
+
+                    <h2 class="education-year">2006-2010</h2>
+                    <h5 class="education-location">University of Huddersfield, UK</h5>
+                    <h3>First-Class Honours Bachelor’s Degree in Electronics</h3>
+
+                    <div class="card-main">
+                        <div class="education-year-2">
+                            <h6 class="education-year-subtext">2nd Year Modules</h6>
+
+                            <p>Enterprise 1 - 78% (A) <br>
+                                Electronics 2 - 76% (A) <br>
+                                Signal Analysis and Control - 62% (B) <br>
+                                Embedded Systems - 85% (A) <br>
+                                Communications - 71% (B)</p>
                         </div>
-                    </a>
-                    <h3>NFX Development Oscilloscope v2</h3>
+
+                        <div class="education-year-3">
+                            <h6 class="education-year-subtext">3rd Year Modules</h6>
+
+                            <p>Individual Project (DSP Audio Acoustics) 85% (A) <br>
+                                DSP Applications - 77% (A) <br>
+                                Analogue Systems Integration - 79% (A) <br>
+                                Digital Systems Integration - 78% (A) <br>
+                                Communication Systems - 77% (A)</p>
+                        </div>
+                    </div>
+
+                    <div style="clear: both;">
+                        <p class="subtext">* Percentages are in reference to the UK scoring system</p>
+                    </div>
+                    <div style="clear: both;">
+                        <a class="subtext"
+                           href="http://www.fulbright.org.uk/going-to-the-usa/pre-departure/academics">Click
+                            here for conversion chart</a>
+                    </div>
+
+                    <br style="clear: both;">
+
+                    <!--                        <h3>Hull College</h3>
+
+                                            <div class="card-main">
+
+                                                <h4>BTec Music Technology — 2003-2006</h4>
+
+                                                <p>Achieved: Distinction - Distinction - Merit</p>
+                                            </div>-->
                 </div>
             </div>
         </div>
+        <div id="portfolio-content" class="content">
+            <div class="content-card">
+                <a class="content-link"
+                   href="https://play.google.com/store/apps/details?id=com.nfx.android.specscope">
+                    <img class="content-image" src="img/promoGraphicSpecscope.png">
+                    <div class="content-middle">
+                        <h1>View on Play Store</h1>
+                    </div>
+                </a>
+                <h3>NFX Development Specscope v2</h3>
+            </div>
+
+            <div class="content-card">
+                <a class="content-link"
+                   href="https://play.google.com/store/apps/details?id=com.winderrnd.personalizedduedate">
+                    <img class="content-image" src="img/promoGraphicPDD.png">
+                    <div class="content-middle">
+                        <h1>View on Play Store</h1>
+                    </div>
+                </a>
+                <h3>Winder RnD Personalized Due Date</h3>
+            </div>
+
+            <div class="content-card">
+                <a class="content-link"
+                   href="https://play.google.com/store/apps/details?id=com.nfx.android.heartfit">
+                    <img class="content-image" src="img/promoGraphicHeartFit.png">
+                    <div class="content-middle">
+                        <h1>View on Play Store</h1>
+                    </div>
+                </a>
+                <h3>NFX Development Heart Fit</h3>
+            </div>
+
+            <div class="content-card">
+                <a class="content-link"
+                   href="https://play.google.com/store/apps/details?id=com.nfx.android.oscilloscope.microphone">
+                    <img class="content-image" src="img/promoGraphicOscilloscope.png">
+                    <div class="content-middle">
+                        <h1>View on Play Store</h1>
+                    </div>
+                </a>
+                <h3>NFX Development Oscilloscope v2</h3>
+            </div>
+        </div>
     </div>
+</div>
 </div>
 
 <script src="js/main.js"></script>
