@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="../css/main.css" type="text/css"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" id="svg4891" height="41.965" width="32.227" version="1.1" viewBox="0 0 116.01561 150.19075">
- <text class="feature-image-svg" id="text4893" style="word-spacing:0px;letter-spacing:0px" font-family="sans-serif" font-size="200px"
-       y="147.84219" x="-12.402344" stroke-width="1px">
-     <tspan id="tspan4895" font-family="sans-serif" y="147.84219" x="-12.402344" font-weight="bold">8</tspan>
- </text>
+<?xml-stylesheet href="../css/main.css" type="text/css"?><svg
+   id="svg4891"
+   height="41.965"
+   width="73.226997"
+   version="1.1"
+   viewBox="0 0 263.61355 150.19075"
+   sodipodi:docname="num-years-exp.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs84" />
+  <sodipodi:namedview
+     id="namedview82"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="32.227px"
+     inkscape:zoom="12.771417"
+     inkscape:cx="42.947467"
+     inkscape:cy="16.638718"
+     inkscape:window-width="1312"
+     inkscape:window-height="763"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4891" />
+  <text
+     class="feature-image-svg"
+     id="text4893"
+     style="letter-spacing:0px;word-spacing:0px"
+     font-family="sans-serif"
+     font-size="200px"
+     y="147.84219"
+     x="-19.602245"
+     stroke-width="1px"><tspan
+       id="tspan4895"
+       font-family="sans-serif"
+       y="147.84219"
+       x="-19.602245"
+       font-weight="bold">10</tspan></text>
 </svg>
