@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../css/main.css" type="text/css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- Robot head -->
+  <rect class="feature-image-svg" x="7" y="4" width="10" height="8" rx="2" ry="2" stroke-width="1" fill="none"/>
+  
+  <!-- Robot eyes -->
+  <circle class="feature-image-svg" cx="9.5" cy="7" r="1"/>
+  <circle class="feature-image-svg" cx="14.5" cy="7" r="1"/>
+  
+  <!-- Robot mouth -->
+  <rect class="feature-image-svg" x="10" y="9" width="4" height="1.5" rx="0.5" ry="0.5"/>
+  
+  <!-- Robot body -->
+  <rect class="feature-image-svg" x="8" y="12" width="8" height="6" rx="1" ry="1" stroke-width="1" fill="none"/>
+  
+  <!-- Robot arms -->
+  <rect class="feature-image-svg" x="5" y="13" width="3" height="1.5" rx="0.5" ry="0.5"/>
+  <rect class="feature-image-svg" x="16" y="13" width="3" height="1.5" rx="0.5" ry="0.5"/>
+  
+  <!-- Robot legs -->
+  <rect class="feature-image-svg" x="9" y="18" width="2" height="3" rx="0.5" ry="0.5"/>
+  <rect class="feature-image-svg" x="13" y="18" width="2" height="3" rx="0.5" ry="0.5"/>
+  
+  <!-- Robot antenna -->
+  <line class="feature-image-svg" x1="12" y1="4" x2="12" y2="2" stroke-width="1"/>
+  <circle class="feature-image-svg" cx="12" cy="2" r="0.5"/>
+</svg>

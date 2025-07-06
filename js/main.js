@@ -1,32 +1,27 @@
 window.onload = function () {
     var resumeContent = document.getElementById("resume-content");
-    var portfolioContent = document.getElementById("portfolio-content");
+    var blogContent = document.getElementById("blog-content");
     var resumeButton = document.getElementById("resume-button");
-    var portfolioButton = document.getElementById("portfolio-button");
+    var blogButton = document.getElementById("blog-button");
     var body = document.getElementById("main");
     var loader = document.getElementById("loader");
 
     showContent(body);
-    showContent(resumeContent);
+    showContent(blogContent);
+    hideContent(resumeContent);
     hideContent(loader);
 
     resumeButton.onclick = function () {
         if (resumeButton.checked) {
             showContent(resumeContent);
-            hideContent(portfolioContent);
-        } else {
-            hideContent(resumeContent);
-            showContent(portfolioContent);
+            hideContent(blogContent);
         }
     };
 
-    portfolioButton.onclick = function () {
-        if (portfolioButton.checked) {
-            showContent(portfolioContent);
+    blogButton.onclick = function () {
+        if (blogButton.checked) {
+            showContent(blogContent);
             hideContent(resumeContent);
-        } else {
-            hideContent(portfolioContent);
-            showContent(resumeContent);
         }
     };
 };

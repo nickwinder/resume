@@ -20,7 +20,17 @@
 <div id="main" style="visibility:hidden">
     <div class="col-3 header-badge">
         <img src="img/profilePictureWithBackground.png">
-        <input id="resume-button" class="portfolio-input" name="navigation-buttons" type="radio" checked>
+        <input class="portfolio-input" name="navigation-buttons" type="radio" id="blog-button" checked/>
+        <label id="blog-holder" class="navigation-item" for="blog-button">
+            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                 viewBox="0 0 24 24">
+                <path id="blog-icon" class="navigation-icon-svg"
+                      d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20Z"></path>
+            </svg>
+            BLOG
+        </label>
+
+        <input id="resume-button" class="portfolio-input" name="navigation-buttons" type="radio">
         <label id="resume-holder" class="navigation-item" for="resume-button">
             <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                  viewBox="0 0 24 24">
@@ -30,15 +40,6 @@
             RESUME
         </label>
 
-        <input class="portfolio-input" name="navigation-buttons" type="radio" id="portfolio-button"/>
-        <label id="portfolio-holder" class="navigation-item" for="portfolio-button">
-            <svg class="navigation-icon-image" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                 viewBox="0 0 24 24">
-                <path id="portfolio-icon" class="navigation-icon-svg"
-                      d="M13 9H18.5L13 3.5V9M6 2H14L20 8V20A2 2 0 0 1 18 22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2M6 20H15L18 20V12L14 16 12 14 6 20M8 9A2 2 0 0 0 6 11 2 2 0 0 0 8 13 2 2 0 0 0 10 11 2 2 0 0 0 8 9Z"></path>
-            </svg>
-            PORTFOLIO
-        </label>
 
         <div class="social">
             <div class="social-links">
@@ -78,7 +79,7 @@
     <div class="col-9 main-content">
         <div class="name-card">
             <h1 class="name">NICHOLAS WINDER</h1>
-            <h3 class="job-title">Software Developer</h3>
+            <h3 class="job-title">Software & AI Developer</h3>
         </div>
 
         <div class="dynamic-content">
@@ -92,7 +93,15 @@
                                     Image
                                 </object>
                                 <h4 class="feature-title">Years Experience</h4>
-                                <p>10 years of software development experience in three different industries.</p>
+                                <p>13 years of software development experience in three different industries.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <object class="feature-image" type="image/svg+xml" data="img/robot.svg">Feature
+                                    Image
+                                </object>
+                                <h4 class="feature-title">AI & Machine Learning</h4>
+                                <p>Experience with LangChain, LangGraph, vector stores, document chunking, and MCP for building intelligent applications.</p>
                             </div>
 
                             <div class="feature-item">
@@ -100,15 +109,6 @@
                                 </object>
                                 <h4 class="feature-title">C++ | Java | C#</h4>
                                 <p>Advanced level of C++ knowledge and products released in Java, C#, Javascript and more.</p>
-                            </div>
-
-                            <div class="feature-item">
-                                <object class="feature-image" type="image/svg+xml" data="img/android-logo.svg">Feature
-                                    Image
-                                </object>
-                                <h4 class="feature-title">Android</h4>
-                                <p>Developed and released 4 android applications to the play store, written in Java and
-                                    Kotlin.</p>
                             </div>
                         </div>
 
@@ -152,49 +152,20 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <div class="card-main">
-                        <div class="feature-row">
-                            <div class="feature-item divein-item">
-                                <h4 class="feature-title">Languages</h4>
-                                <p>C++20</p>
-                                <p>Java</p>
-                                <p>C#</p>
-                                <p>Kotlin</p>
-                            </div>
-                            <div class="feature-item divein-item">
-                                <h4 class="feature-title">Tools</h4>
-                                <p>Atlassian</p>
-                                <p>Github</p>
-                                <p>Visual Studio</p>
-                                <p>Jetbrains IDE's</p>
-                            </div>
-                            <div class="feature-item divein-item">
-                                <h4 class="feature-title">Environments</h4>
-                                <p>Linux</p>
-                                <p>Android</p>
-                                <p>Windows</p>
-                                <p>Web Assembly</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br style="clear: both">
-                </div>
-                <div class="content-card">
                     <h2>Experience</h2>
 
                     <div class="card-main">
                         <div class="timeline-item" date-is='2017-Present'>
-                            <h5>PSPDFKit, Vienna Austria (Remote)</h5>
-                            <h3 class="company">Software Developer</h3>
-                            <p>Developing PDF SDKs across multiple platforms</p>
+                            <h5>Nutrient (formally PSPDFKit), The world (Remote)</h5>
+                            <h3 class="company">Software and AI Developer</h3>
+                            <p>Developing document SDKs across multiple platforms</p>
 
                             <ul>
-                                <li>Working with extensively tested C++17 to fix and maintain core product.</li>
+                                <li>Led release of company's first AI product and pioneered innovations in MCP and agentic design.</li>
                                 <li>Developing new features in a C++ core with an API exposed to iOS, Android, UWP,
                                     Web Assembly and Linux.
                                 </li>
                                 <li>Created and released a new Server SDK for Java and .NET in 4 months.</li>
-                                <li>Helped develop the UWP Windows SDK from an early stage in C# and C++/CLI.</li>
                                 <li>Refactoring and modernizing the core build CMake build system.</li>
                                 <li>Writing technical and non-technical blogs, guides, and API documentation.</li>
                             </ul>
@@ -366,49 +337,28 @@
                     </div>
                 </div>
             </div>
-            <div id="portfolio-content" class="content">
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.specscope">
-                        <img class="content-image" src="img/promoGraphicSpecscope.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>NFX Development Specscope v2</h3>
+            <div id="blog-content" class="content">
+                <div class="content-card blog-header">
+                    <h2>Blog Posts</h2>
+                    <p class="blog-subtitle">Thoughts on software development, AI, and technology</p>
                 </div>
 
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.winderrnd.personalizedduedate">
-                        <img class="content-image" src="img/promoGraphicPDD.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>Winder RnD Personalized Due Date</h3>
-                </div>
+                <div class="blog-post-grid">
+                    <article class="blog-post-card">
+                        <h3 class="blog-post-title">
+                            <a href="blogPosts/cmakeStructure.html">CMake Structure Best Practices</a>
+                        </h3>
+                        <p class="blog-post-excerpt">A comprehensive guide to organizing and structuring CMake projects for better maintainability, scalability, and team collaboration.</p>
+                        <a href="blogPosts/cmakeStructure.html" class="blog-read-more">Read more →</a>
+                    </article>
 
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.heartfit">
-                        <img class="content-image" src="img/promoGraphicHeartFit.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>NFX Development Heart Fit</h3>
-                </div>
-
-                <div class="content-card">
-                    <a class="content-link"
-                       href="https://play.google.com/store/apps/details?id=com.nfx.android.oscilloscope.microphone">
-                        <img class="content-image" src="img/promoGraphicOscilloscope.png">
-                        <div class="content-middle">
-                            <h1>View on Play Store</h1>
-                        </div>
-                    </a>
-                    <h3>NFX Development Oscilloscope v2</h3>
+                    <article class="blog-post-card">
+                        <h3 class="blog-post-title">
+                            <a href="blogPosts/rxcppTheFirstSimpleExample.html">RxCpp: The First Simple Example</a>
+                        </h3>
+                        <p class="blog-post-excerpt">Getting started with reactive programming in C++ using RxCpp. Learn the fundamentals through practical examples and real-world use cases.</p>
+                        <a href="blogPosts/rxcppTheFirstSimpleExample.html" class="blog-read-more">Read more →</a>
+                    </article>
                 </div>
             </div>
         </div>
