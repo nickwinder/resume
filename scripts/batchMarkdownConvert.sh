@@ -18,7 +18,8 @@ fi
 if [ ! -d "$outputHtmlFolder" ]; then
   mkdir -p $outputHtmlFolder
 else
-  rm $outputHtmlFolder/*
+  rm -rf $outputHtmlFolder
+  mkdir -p $outputHtmlFolder
 fi
 
 files="$markdownFolder/*"
