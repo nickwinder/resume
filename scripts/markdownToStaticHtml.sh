@@ -16,6 +16,9 @@ if [ -f $outputHtmlFile ]; then
   rm $outputHtmlFile
 fi
 
+# Add CSS class to img tags for full container width
+sed -i '' 's/<img/<img class="full-width"/g' tempSnippet.html
+
 # Remove the first new lines after the heading as it makes it easier to process
 sed -i '' -e ':a' -e 'N;$!ba' -e 's/\n//1' tempSnippet.html
 

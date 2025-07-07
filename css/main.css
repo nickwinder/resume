@@ -386,6 +386,15 @@ body {
     background: var(--content-background);
 }
 
+.content-card img.full-width {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+    max-width: none;
+    height: auto;
+    display: block;
+}
+
 .name-card {
     width: 100%;
     padding: 8px 24px;
