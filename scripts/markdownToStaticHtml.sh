@@ -20,7 +20,7 @@ fi
 sed -i '' -e ':a' -e 'N;$!ba' -e 's/\n//1' tempSnippet.html
 
 # wrap the h1 tag in a content-card
-sed -i '' '0,/<h1\b[^>]*>.*<\/h1>/ s/<h1\b[^>]*>.*<\/h1>/<div class="content-card">&<\/div><div class="content-card">/' tempSnippet.html
+sed -i '' '1s/^/<div class="content-card">/' tempSnippet.html
 
 # create a new content-card everytime h2 is seen
 sed -i '' 's/<h2/<\/div><div class="content-card"><h2/g' tempSnippet.html
